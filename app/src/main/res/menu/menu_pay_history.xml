@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/record_all"
+        android:title="@string/record_all"
+        app:showAsAction="never"/>
+    <item android:id="@+id/record_electricity"
+        android:title="@string/record_electricity"
+        app:showAsAction="never"/>
+    <item android:id="@+id/record_house"
+        android:title="@string/record_house"
+        app:showAsAction="never"/>
+    <item android:id="@+id/record_store"
+        android:title="@string/record_store"
+        app:showAsAction="never"/>
+    <item android:id="@+id/record_park"
+        android:title="@string/record_park"
+        app:showAsAction="never"/>
+</menu>

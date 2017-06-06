@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mintui.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<!--<div class="tips">
+			<marquee>温馨提示:为提升e费通使用体验，我们将在5月24日22：00-5月25日06：00进行系统升级。期间e费通相关业务可能会受影响，对给您带来的不便深表歉意，敬请谅解！</marquee>
+		</div>-->
+		<div id="home">
+			<mt-loadmore @bottom-status-change='handleBottomChange' :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" ref="loadmore" style="padding-bottom:60px;" >
+
+					<div class="card" v-for="item in homelist.list">
+						<div class="cardtitle titlecolor_home">
+							<i class="fa fa-home"></i>&nbsp;<span v-text="item.alias">家庭</span>
+						</div>
+						<div class="cardbody">
+							<div class="bodyleft"  v-on:click="tocheck(item)">
+								<ul>
+									<li>小区：<span v-text="item.community_name">-</span></li>
+									<li>房间号：<span v-text="item.build_name+item.unit_name+item.unit_name+item.door_name">-</span></li>
+									<li>房屋编号：<span v-text="item.unit_id">-</span></li>
+									<li>详细地址：<span v-text="item.address_info">-</span></li>
+								</ul>
+							</div>
+							<div class="bodyright" v-on:click="getadddetail(item)" style="z-index: 3000;">
+								<span></span>&nbsp;
+								<i class="fa fa-angle-right fa-2x"></i>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+
+					<div slot="bottom" class="mint-loadmore-bottom" style="display: none;">
+				      <span v-show="bottomStatus === 'pull'">上拉加载更多</span>
+				      <span v-show="bottomStatus === 'drop'">释放加载</span>
+				      <span v-show="bottomStatus === 'loading'">加载中...</span>
+				   </div>
+
+				<div class="card">
+					<div class="cardtitle titlecolor_none">
+						<i class="fa fa-home"></i>&nbsp;家庭
+						<span class="pull-right"><a href="question.html"><img src="img/icon_help@2x.png" width="25px" /></a></span>
+					</div>
+					<div class="cardbody" style="position: relative;">
+						<div class="addmsg">
+							<a href="address.html" style="text-decoration: none; color: #24A1F1;">添加物业管理缴费地址</a>
+							<span class="camera"><a href="address.html"><img src="img/Printer@2x.png" width="25" /></a></span>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="adv" style="padding: 0 10px;">
+
+					<div class="advbtnl" v-on:click="toEReduceList">
+						<div style="padding: 10px;">
+							<img class="pull-left" src="img/img_home_cfrs@2x.png" width="50px"/>
+							<span class="pull-left" >财富生活<br />增值计划</span>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+					<div class="advbtnr" v-on:click="toPark">
+						<div style="padding: 10px;">
+							<img class="pull-left" src="img/img_home_jf@2x.png" width="50px" />
+							<span class="pull-left">缴停车费</span>
+							<div class="clear"></div>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+
+			</mt-loadmore>
+
+				<mt-tabbar class="foot" style="display: none;">
+
+					<mt-tab-item id="">
+						<img src="img/nav_icon_give_s@2x.png" width="25px" />
+						<p>E费通</p>
+					</mt-tab-item>
+
+					<mt-tab-item id="" href="usercenter.html">
+						<img src="img/nav_icon_me_m@2x.png" width="25px" />
+						<p style="color: #333c45;">个人中心</p>
+					</mt-tab-item>
+
+				</mt-tabbar>
+
+
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="js/md5.js" ></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<!--<script src="https://unpkg.com/mint-ui/lib/index.js"></script>-->
+	<script type="text/javascript" src="js/mintui.js" ></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>

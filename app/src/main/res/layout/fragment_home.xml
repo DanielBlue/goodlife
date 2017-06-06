@@ -1,0 +1,361 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackground"
+    tools:context="com.zoesap.goodlife.fragment.HomeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/base_margin"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_top_size"
+                android:background="@drawable/home_bg">
+
+                <TextView
+                    android:id="@+id/tv_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_place"
+                    android:padding="@dimen/base_margin"
+                    android:text="体验小区"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:id="@+id/iv_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/base_margin"
+                    android:src="@drawable/icon_home_lingd3x" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_about_gold"
+                        style="@style/DesTextStyle"
+                        android:drawableLeft="@drawable/icon_home_smask3x"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:text="@string/about_gold" />
+
+                    <TextView
+                        android:id="@+id/tv_save_money"
+                        style="@style/DesTextStyle"
+                        android:drawableLeft="@drawable/icon_home_smask3x"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:text="@string/save_money" />
+
+                    <TextView
+                        android:id="@+id/tv_my_gold"
+                        style="@style/DesTextStyle"
+                        android:drawableLeft="@drawable/icon_home_smask3x"
+                        android:drawablePadding="@dimen/margin_small"
+                        android:text="@string/my_gold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/ease_unread_dot"
+                android:drawablePadding="@dimen/base_margin"
+                android:drawableRight="@drawable/arrow_go_icon_small"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/base_margin"
+                android:text="asjkdkajshdkjashdkjashdkjashdkjsahdkjashdkjashdkjashkdjhaskjdhaskjdhaskjdhkasdhkjashdkjashdkjashkdhsakjdhaskjdhkashdkasdhkasjhdkjsahdkjsahdkjsahdkas" />
+
+            <LinearLayout
+                style="@style/MarginLeftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/divider_line"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_open_door"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/circle_guard3x"
+                    android:gravity="center"
+                    android:text="@string/open_door" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    android:id="@+id/tv_parking"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/tingche3x"
+                    android:gravity="center"
+                    android:text="@string/parking" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    android:id="@+id/tv_gold_mall"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/circle_guard3x"
+                    android:gravity="center"
+                    android:text="@string/gold_store" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/circle_guard3x"
+                    android:gravity="center"
+                    android:text="@string/near_life" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MarginLeftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_furniture_repairs"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:gravity="center"
+                    android:text="@string/furniture_repairs" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    android:id="@+id/tv_e_pass"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:gravity="center"
+                    android:text="@string/e_pass" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    android:id="@+id/tv_opinion"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:gravity="center"
+                    android:text="@string/opinion" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    style="@style/DesTextStyle"
+                    android:drawablePadding="@dimen/base_margin"
+                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:gravity="center"
+                    android:text="@string/more" />
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_house_manager"
+                style="@style/MarginLeftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/divider_line"
+                android:layout_marginTop="@dimen/divider_line"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/base_margin"
+                android:paddingTop="@dimen/base_margin">
+
+                <ImageView
+                    android:id="@+id/iv_header_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/base_margin"
+                    android:padding="@dimen/margin_small"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/b0_not_binded_head" />
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_toEndOf="@+id/iv_header_img"
+                    android:text="未绑定专属管家"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_des"
+                    android:layout_below="@id/tv_des"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_margin"
+                    android:text="立即绑定专属管家"
+                    android:textColor="@color/textColorGray" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/base_margin"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/base_margin"
+                    android:text="@string/binding"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_top_size"
+                android:layout_marginBottom="@dimen/divider_line"
+
+                ></android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                style="@style/MarginLeftAndRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/divider_line"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small">
+
+                <RelativeLayout
+                    android:id="@+id/rl_good_life_house"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/base_margin">
+
+                    <ImageView
+                        android:id="@+id/iv_header_img_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/czz3x" />
+
+                    <TextView
+                        android:id="@+id/tv_gold_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_header_img_2"
+                        android:layout_marginLeft="@dimen/base_margin"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/gold_store"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_gold_store"
+                        android:layout_below="@id/tv_gold_store"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/base_margin"
+                        android:text="购房返金币"
+                        android:textColor="@color/textColorBlack" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/divider_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBaseBackground" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_treasure_life"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/base_margin">
+
+                    <ImageView
+                        android:id="@+id/iv_header_img_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cfrs3x" />
+
+                    <TextView
+                        android:id="@+id/tv_treasure_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_header_img_3"
+                        android:layout_marginLeft="@dimen/base_margin"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/treasure_life"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_treasure_life"
+                        android:layout_below="@id/tv_treasure_life"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/base_margin"
+                        android:text="粮油10元购"
+                        android:textColor="@color/textColorBlack" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

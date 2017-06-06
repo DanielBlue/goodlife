@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackground"
+    android:orientation="vertical"
+    tools:context="com.zoesap.goodlife.activity.HomeActivity">
+
+    <com.zoesap.goodlife.view.NoScrollViewpager
+        android:id="@+id/vp_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.zoesap.goodlife.view.NoScrollViewpager>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/divider_line"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_btn"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="matrix"
+            android:text="@string/tab_home"
+            android:textColor="@drawable/home_tab_textcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_community_btn"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="matrix"
+            android:text="@string/tab_community"
+            android:textColor="@drawable/home_tab_textcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_saoyisao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_saoyisao_btn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="matrix" />
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_discover_btn"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="matrix"
+            android:text="@string/tab_discover"
+            android:textColor="@drawable/home_tab_textcolor"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_profile_btn"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="matrix"
+            android:text="@string/tab_profile"
+            android:textColor="@drawable/home_tab_textcolor"
+            android:textSize="12sp" />
+    </RadioGroup>
+</LinearLayout>

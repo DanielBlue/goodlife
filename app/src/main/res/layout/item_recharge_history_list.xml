@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/content_top_size"
+    android:background="@color/white"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_margin"
+            android:layout_marginTop="20dp"
+            android:text="充值金额" />
+
+        <TextView
+            android:id="@+id/tv_recharge_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base_margin"
+            android:layout_marginTop="20dp"
+            android:text="充值状态"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/tv_recharge_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recharge"
+            android:layout_below="@id/tv_recharge"
+            android:layout_marginTop="@dimen/base_margin"
+            android:text="10.50"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/tv_recharge_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recharge_num"
+            android:layout_below="@id/tv_recharge_num"
+            android:layout_marginTop="@dimen/base_margin"
+            android:text="充值号码 : 15969745632"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_charge_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_recharge_phone"
+            android:layout_below="@id/tv_recharge_phone"
+            android:layout_marginTop="@dimen/base_margin"
+            android:text="充值号码 : 15969745632"
+            android:textColor="@android:color/black"
+            android:paddingBottom="20dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

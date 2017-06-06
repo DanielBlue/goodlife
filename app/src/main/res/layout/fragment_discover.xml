@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBaseBackground">
+
+    <include layout="@layout/include_top_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/DesTextStyle"
+            android:drawableLeft="@drawable/d0_business"
+            android:text="@string/business"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/base_margin"
+            android:textSize="@dimen/text_size_medium"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_go_icon_small"
+            android:paddingRight="@dimen/base_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_same_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_margin"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/DesTextStyle"
+            android:drawableLeft="@drawable/d0_same_community"
+            android:text="@string/same_community"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/base_margin"
+            android:textSize="@dimen/text_size_medium"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_go_icon_small"
+            android:paddingRight="@dimen/base_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_near_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_line"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/DesTextStyle"
+            android:drawableLeft="@drawable/d0_near_community"
+            android:text="@string/near_community"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/base_margin"
+            android:textSize="@dimen/text_size_medium"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_go_icon_small"
+            android:paddingRight="@dimen/base_margin"/>
+    </LinearLayout>
+
+
+</LinearLayout>

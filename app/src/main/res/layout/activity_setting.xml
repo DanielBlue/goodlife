@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBaseBackground"
+    android:orientation="vertical"
+    tools:context="com.zoesap.goodlife.activity.SettingActivity">
+
+    <include layout="@layout/include_top_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/base_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_notice"
+            android:drawablePadding="@dimen/base_margin"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base_margin"
+            android:text="@string/notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ToggleButton
+            android:id="@+id/tb_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff=""
+            android:textOn=""
+            android:gravity="center|right"
+            android:background="@android:color/transparent"
+            android:button="@drawable/my_toggle_button"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_good_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/base_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_logo"
+            android:drawablePadding="@dimen/base_margin"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base_margin"
+            android:text="@string/about_good_life"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:layout_marginRight="@dimen/margin_big"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_big"
+            android:background="?attr/colorPrimary"
+            android:text="@string/login_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+</LinearLayout>

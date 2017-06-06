@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_menu_saoyisao"
+        android:icon="@drawable/btn_open_scan"
+        android:title="@string/saoyisao"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_menu_apply_permission"
+        android:icon="@drawable/icon_apply"
+        android:title="@string/apply_permission"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_menu_accredit_permission"
+        android:icon="@drawable/icon_author"
+        android:title="@string/accredit_permission"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_menu_edit_door_scan"
+        android:icon="@drawable/icon_compile"
+        android:title="@string/edit_door_scan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_menu_door_scan_help"
+        android:icon="@drawable/icon_help"
+        android:title="@string/door_scan_help"
+        app:showAsAction="never" />
+</menu>
