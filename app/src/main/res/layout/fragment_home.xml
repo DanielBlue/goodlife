@@ -133,16 +133,19 @@
                     android:background="@color/colorBaseBackground" />
 
                 <TextView
+                    android:id="@+id/round"
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
                     android:drawableTop="@drawable/b0_circle_near"
                     android:gravity="center"
-                    android:text="@string/near_life" />
+                    android:text="@string/near_life"
+                    />
 
                 <View
                     android:layout_width="@dimen/divider_line"
                     android:layout_height="match_parent"
-                    android:background="@color/colorBaseBackground" />
+                    android:background="@color/colorBaseBackground"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -150,7 +153,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <TextView
                     android:id="@+id/tv_furniture_repairs"
@@ -294,9 +298,9 @@
                         android:id="@+id/tv_gold_store"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/iv_header_img_2"
-                        android:layout_marginLeft="@dimen/base_margin"
                         android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/base_margin"
+                        android:layout_toRightOf="@id/iv_header_img_2"
                         android:text="@string/gold_store"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_size_medium"
@@ -336,9 +340,9 @@
                         android:id="@+id/tv_treasure_life"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/iv_header_img_3"
-                        android:layout_marginLeft="@dimen/base_margin"
                         android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/base_margin"
+                        android:layout_toRightOf="@id/iv_header_img_3"
                         android:text="@string/treasure_life"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_size_medium"

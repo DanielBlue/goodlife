@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.zoesap.goodlife.activity.BusinessAreaActivity;
 import com.zoesap.goodlife.base.BaseFragment;
 import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.activity.AboutGoldActivity;
@@ -106,10 +107,12 @@ public class HomeFragment extends BaseFragment {
         unbinder.unbind();
     }
 
-    @OnClick({R.id.tv_about_gold, R.id.tv_save_money, R.id.tv_my_gold, R.id.tv_more,
-            R.id.tv_open_door, R.id.iv_notify, R.id.tv_message, R.id.rl_treasure_life,
-            R.id.tv_gold_mall, R.id.tv_parking, R.id.tv_furniture_repairs,
-            R.id.tv_e_pass, R.id.tv_opinion,R.id.rl_good_life_house,R.id.rl_house_manager})
+    @OnClick({R.id.tv_about_gold, R.id.tv_save_money, R.id.tv_my_gold,
+            R.id.tv_more, R.id.tv_open_door, R.id.iv_notify,
+            R.id.tv_message, R.id.rl_treasure_life, R.id.tv_gold_mall,
+            R.id.tv_parking, R.id.tv_furniture_repairs, R.id.tv_e_pass,
+            R.id.tv_opinion,R.id.rl_good_life_house,R.id.rl_house_manager,
+            R.id.round})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_more:
@@ -154,6 +157,9 @@ public class HomeFragment extends BaseFragment {
                 break;
             case R.id.rl_house_manager:
                 activity.startActivity(HouseManagerActivity.createStartIntent(activity));
+                break;
+            case R.id.round:
+                activity.startActivity(BusinessAreaActivity.createStartIntent(activity));
                 break;
         }
     }

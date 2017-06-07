@@ -122,4 +122,5 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         Intent intent = new Intent(activity, HomeActivity.class);
         return intent;
     }
+
 }
