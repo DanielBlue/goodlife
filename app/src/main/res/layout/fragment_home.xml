@@ -57,14 +57,14 @@
                     <TextView
                         android:id="@+id/tv_save_money"
                         style="@style/DesTextStyle"
-                        android:drawableLeft="@drawable/icon_home_smask3x"
+                        android:drawableLeft="@drawable/icon_home_smmiji"
                         android:drawablePadding="@dimen/margin_small"
                         android:text="@string/save_money" />
 
                     <TextView
                         android:id="@+id/tv_my_gold"
                         style="@style/DesTextStyle"
-                        android:drawableLeft="@drawable/icon_home_smask3x"
+                        android:drawableLeft="@drawable/icon_home_mytickettt"
                         android:drawablePadding="@dimen/margin_small"
                         android:text="@string/my_gold" />
                 </LinearLayout>
@@ -123,7 +123,7 @@
                     android:id="@+id/tv_gold_mall"
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
-                    android:drawableTop="@drawable/circle_guard3x"
+                    android:drawableTop="@drawable/b0_circle_pay"
                     android:gravity="center"
                     android:text="@string/gold_store" />
 
@@ -135,7 +135,7 @@
                 <TextView
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
-                    android:drawableTop="@drawable/circle_guard3x"
+                    android:drawableTop="@drawable/b0_circle_near"
                     android:gravity="center"
                     android:text="@string/near_life" />
 
@@ -169,7 +169,7 @@
                     android:id="@+id/tv_e_pass"
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
-                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:drawableTop="@drawable/icon_home_phone3x"
                     android:gravity="center"
                     android:text="@string/e_pass" />
 
@@ -182,7 +182,7 @@
                     android:id="@+id/tv_opinion"
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
-                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:drawableTop="@drawable/icon_find_community"
                     android:gravity="center"
                     android:text="@string/opinion" />
 
@@ -195,7 +195,7 @@
                     android:id="@+id/tv_more"
                     style="@style/DesTextStyle"
                     android:drawablePadding="@dimen/base_margin"
-                    android:drawableTop="@drawable/icon_home_jjwx3x"
+                    android:drawableTop="@drawable/c0_more"
                     android:gravity="center"
                     android:text="@string/more" />
 

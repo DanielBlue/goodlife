@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.BaseFragment;
+import com.zoesap.goodlife.base.BaseFragment;
 import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.activity.AboutGoldActivity;
 import com.zoesap.goodlife.activity.EPassActivity;

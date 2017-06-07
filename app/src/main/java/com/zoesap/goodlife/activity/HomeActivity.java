@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.uuzuche.lib_zxing.activity.CodeUtils;
-import com.zoesap.goodlife.BaseActivity;
+import com.zoesap.goodlife.base.BaseActivity;
 import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.adapter.HomeTabPagerAdapter;
 import com.zoesap.goodlife.fragment.CommunityFragment;

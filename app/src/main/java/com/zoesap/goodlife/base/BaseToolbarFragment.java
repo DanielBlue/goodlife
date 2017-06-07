@@ -1,4 +1,4 @@
-package com.zoesap.goodlife;
+package com.zoesap.goodlife.base;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;

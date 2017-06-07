@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.zoesap.goodlife.BaseFragment;
+import com.zoesap.goodlife.base.BaseFragment;
 import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.adapter.MessageListAdapter;
 import com.zoesap.goodlife.adapter.SpacesItemDecoration;

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.BaseToolbarActivity;
+import com.zoesap.goodlife.base.BaseToolbarActivity;
 import com.zoesap.goodlife.R;
 
 import java.lang.reflect.Method;

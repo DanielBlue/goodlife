@@ -1,4 +1,4 @@
-package com.zoesap.goodlife;
+package com.zoesap.goodlife.base;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.zoesap.goodlife.R;
 
 /**
  * Created by maoqi on 2017/6/6.

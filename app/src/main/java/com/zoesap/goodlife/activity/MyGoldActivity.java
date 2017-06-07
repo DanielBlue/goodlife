@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.BaseToolbarActivity;
+import com.zoesap.goodlife.base.BaseToolbarActivity;
 import com.zoesap.goodlife.R;
 
 import butterknife.BindView;

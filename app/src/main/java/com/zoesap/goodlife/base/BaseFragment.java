@@ -1,4 +1,4 @@
-package com.zoesap.goodlife;
+package com.zoesap.goodlife.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

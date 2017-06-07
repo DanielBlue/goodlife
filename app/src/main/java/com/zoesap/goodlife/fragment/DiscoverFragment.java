@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.BaseToolbarFragment;
+import com.zoesap.goodlife.base.BaseToolbarFragment;
 import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.activity.BusinessAreaActivity;
 import com.zoesap.goodlife.activity.NearCommunityActivity;

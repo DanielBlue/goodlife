@@ -1,4 +1,4 @@
-package com.zoesap.goodlife;
+package com.zoesap.goodlife.base;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -8,6 +8,8 @@ import android.support.annotation.StringRes;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
+import com.zoesap.goodlife.GoodLifeApplication;
+import com.zoesap.goodlife.R;
 import com.zoesap.goodlife.util.LUtils;
 
 /**
