@@ -77,4 +77,15 @@
     <string name="notice">消息推送</string>
     <string name="about_good_life">关于好生活</string>
     <string name="setting">设置</string>
+    <string name="no_business">附近还没有商户</string>
+    <string name="head_icon">头像</string>
+    <string name="my_ORC">我的二维码</string>
+    <string name="nick_name">昵称</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="address">地址</string>
+    <string name="phone_num">手机</string>
+    <string name="change_password">修改密码</string>
+    <string name="save">保存</string>
+    <string name="person_info">个人信息</string>
 </resources>

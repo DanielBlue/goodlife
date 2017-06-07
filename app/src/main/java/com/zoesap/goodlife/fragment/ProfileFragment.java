@@ -20,6 +20,7 @@ import com.zoesap.goodlife.activity.MyGoldActivity;
 import com.zoesap.goodlife.activity.MyHouseActivity;
 import com.zoesap.goodlife.activity.MyMoneyManagerActivity;
 import com.zoesap.goodlife.activity.PayHistoryActivity;
+import com.zoesap.goodlife.activity.PersonInfoActivity;
 import com.zoesap.goodlife.activity.RechargeHistoryActivity;
 import com.zoesap.goodlife.activity.SettingActivity;
 import com.zoesap.goodlife.activity.YourOpinionActivity;
@@ -91,9 +92,10 @@ public class ProfileFragment extends BaseToolbarFragment {
         return true;
     }
 
-    @OnClick({R.id.ll_recharge_history, R.id.ll_my_gold,R.id.ll_my_house,
-            R.id.ll_order_record,R.id.ll_business_order,R.id.ll_my_card,
-            R.id.ll_my_money_manager,R.id.ll_your_opinion,R.id.ll_invite})
+    @OnClick({R.id.ll_recharge_history, R.id.ll_my_gold, R.id.ll_my_house,
+            R.id.ll_order_record, R.id.ll_business_order, R.id.ll_my_card,
+            R.id.ll_my_money_manager, R.id.ll_your_opinion, R.id.ll_invite,
+            R.id.rl_user})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_recharge_history:
@@ -122,6 +124,9 @@ public class ProfileFragment extends BaseToolbarFragment {
                 break;
             case R.id.ll_invite:
                 startActivity(InviteFriendActivity.createStartIntent(activity));
+                break;
+            case R.id.rl_user:
+                startActivity(PersonInfoActivity.createStartIntent(activity));
                 break;
         }
     }

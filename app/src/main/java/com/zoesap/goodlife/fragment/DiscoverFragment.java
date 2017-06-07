@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import com.zoesap.goodlife.BaseToolbarFragment;
 import com.zoesap.goodlife.R;
+import com.zoesap.goodlife.activity.BusinessAreaActivity;
+import com.zoesap.goodlife.activity.NearCommunityActivity;
+import com.zoesap.goodlife.activity.SameCommunityActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,13 +59,13 @@ public class DiscoverFragment extends BaseToolbarFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_business:
-
+                activity.startActivity(BusinessAreaActivity.createStartIntent(activity));
                 break;
             case R.id.ll_same_community:
-
+                activity.startActivity(SameCommunityActivity.createStartIntent(activity));
                 break;
             case R.id.ll_near_community:
-
+                activity.startActivity(NearCommunityActivity.createStartIntent(activity));
                 break;
         }
     }

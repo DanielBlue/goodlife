@@ -54,7 +54,11 @@
         <activity android:name=".activity.ParkingActivity" />
         <activity android:name=".activity.GoodLifeHouseActivity" />
         <activity android:name=".activity.HouseManagerActivity" />
-        <activity android:name=".activity.SettingActivity"></activity>
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.BusinessAreaActivity" />
+        <activity android:name=".activity.SameCommunityActivity" />
+        <activity android:name=".activity.NearCommunityActivity" />
+        <activity android:name=".activity.PersonInfoActivity"></activity>
     </application>
 
 </manifest>
