@@ -88,4 +88,8 @@
     <string name="change_password">修改密码</string>
     <string name="save">保存</string>
     <string name="person_info">个人信息</string>
+    <string name="loading">正在加载中</string>
+    <string name="load_finish">没有更多内容</string>
+    <string name="input_your_opinion_type">请选择反馈类型:</string>
+    <string name="upload_photo">上传照片(可选)：</string>
 </resources>

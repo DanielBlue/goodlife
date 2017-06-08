@@ -4,24 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBaseBackground"
+    android:orientation="vertical"
     tools:context="com.zoesap.goodlife.activity.InviteFriendActivity">
-    <include layout="@layout/include_top_toolbar"/>
+
+    <include layout="@layout/include_top_toolbar" />
+
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/base_margin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/margin_big"
-        android:maxLines="1"
+        android:background="@color/white"
         android:hint="@string/input_friend_phone_num"
-        android:background="@color/white"/>
+        android:maxLines="1"
+        android:padding="@dimen/base_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/base_margin"
+        android:text="系统将发送一条推荐短信到好友手机上，好友点击链接即可下载注册"/>
+
+
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_margin"
+        android:layout_marginRight="@dimen/base_margin"
+        android:layout_marginBottom="@dimen/base_margin"
         android:background="?attr/colorPrimary"
-        android:layout_margin="@dimen/margin_big"
         android:text="@string/invite_rightnow"
-        android:textSize="@dimen/text_size_medium"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/divider_line"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/base_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_invite_record"
+            android:drawablePadding="@dimen/base_margin"
+            android:gravity="center_vertical"
+            android:text="邀请记录"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin"
+            android:src="@drawable/arrow_go_icon_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/divider_line"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/base_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_invite_success"
+            android:drawablePadding="@dimen/base_margin"
+            android:gravity="center_vertical"
+            android:text="邀请战绩"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin"
+            android:src="@drawable/arrow_go_icon_small" />
+    </LinearLayout>
 </LinearLayout>

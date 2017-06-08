@@ -59,6 +59,9 @@
         <activity android:name=".activity.SameCommunityActivity" />
         <activity android:name=".activity.NearCommunityActivity" />
         <activity android:name=".activity.PersonInfoActivity" />
+        <activity android:name=".test.TestActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -17,4 +17,5 @@
     <color name="viewBackground">@android:color/white</color>
     <color name="white">@android:color/white</color>
     <color name="black">@android:color/black</color>
+    <color name="blue" >@color/colorPrimary</color>
 </resources>

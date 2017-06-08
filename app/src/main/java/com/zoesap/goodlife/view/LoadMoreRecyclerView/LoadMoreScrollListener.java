@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
  */
 
 public abstract class LoadMoreScrollListener extends RecyclerView.OnScrollListener {
+
     private int previousTotal = 0;
     private boolean loading = true;
     int firstVisibleItem, visibleItemCount, totalItemCount;
@@ -34,6 +35,7 @@ public abstract class LoadMoreScrollListener extends RecyclerView.OnScrollListen
                 previousTotal = totalItemCount;
             }
         }
+
         if (!loading && (totalItemCount - visibleItemCount) <= firstVisibleItem) {
             currentPage++;
             onLoadMore(currentPage);
@@ -42,5 +44,16 @@ public abstract class LoadMoreScrollListener extends RecyclerView.OnScrollListen
 
     }
 
+    public void setPreviousTotal(int previousTotal) {
+        this.previousTotal = previousTotal;
+    }
+
+    public void setLoading(boolean loading) {
+        this.loading = loading;
+    }
+
+    public boolean getLoading() {
+        return loading;
+    }
     public abstract void onLoadMore(int currentPage);
 }
