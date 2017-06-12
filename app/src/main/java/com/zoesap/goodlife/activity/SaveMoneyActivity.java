@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.TextView;
 
+import com.zoesap.goodlife.Constants;
 import com.zoesap.goodlife.base.BaseToolbarWebActivity;
 import com.zoesap.goodlife.R;
 
@@ -33,7 +34,7 @@ public class SaveMoneyActivity extends BaseToolbarWebActivity {
 
     private void loadWeb() {
         initWeb(wvWeb);
-        wvWeb.loadUrl("file:///android_asset/save_money.html");
+        wvWeb.loadUrl(Constants.ASSET_FILE_PREFIXION+"save_money.html");
     }
 
     @Override

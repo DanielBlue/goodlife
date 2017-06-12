@@ -34,7 +34,7 @@ public class MessageLeftFragment extends BaseFragment {
     protected void initData() {
         NotifyMessageBean bean ;
         for (int x=0;x<30;x++){
-            bean = new NotifyMessageBean("标题"+x,"2017-6-3","00000000000000000000000000000000000000000000000000");
+            bean = new NotifyMessageBean("通知"+x,"2017-6-3",getResources().getString(R.string.notify_message_test));
             data.add(bean);
         }
     }

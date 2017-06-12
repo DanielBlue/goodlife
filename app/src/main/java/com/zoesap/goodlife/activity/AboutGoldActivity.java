@@ -7,8 +7,9 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.base.BaseToolbarWebActivity;
+import com.zoesap.goodlife.Constants;
 import com.zoesap.goodlife.R;
+import com.zoesap.goodlife.base.BaseToolbarWebActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,7 +38,7 @@ public class AboutGoldActivity extends BaseToolbarWebActivity {
 
     private void loadWeb() {
         initWeb(wvWeb);
-        wvWeb.loadUrl("file:///android_asset/goodlife_about_gold.html");
+        wvWeb.loadUrl(Constants.ASSET_FILE_PREFIXION+"goodlife_about_gold.html");
     }
 
     @Override

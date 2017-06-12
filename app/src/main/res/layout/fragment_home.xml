@@ -83,7 +83,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:padding="@dimen/base_margin"
-                android:text="asjkdkajshdkjashdkjashdkjashdkjsahdkjashdkjashdkjashkdjhaskjdhaskjdhaskjdhkasdhkjashdkjashdkjashkdhsakjdhaskjdhkashdkasdhkasjhdkjsahdkjsahdkjsahdkas" />
+                android:text="@string/notify_message_test" />
 
             <LinearLayout
                 style="@style/MarginLeftAndRight"

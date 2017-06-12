@@ -7,8 +7,9 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.base.BaseToolbarWebActivity;
+import com.zoesap.goodlife.Constants;
 import com.zoesap.goodlife.R;
+import com.zoesap.goodlife.base.BaseToolbarWebActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,7 +37,8 @@ public class EPassActivity extends BaseToolbarWebActivity {
 
     private void loadWeb() {
         initWeb(wvWeb);
-        wvWeb.loadUrl("http://eft.colourlife.com/?platform=colourlife&userid=2899331&username=user_15072616127&mobile=15072616127&password=3a018596eeaad1cc0d18b05e6fbcbc65&cid=585&cname=%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&caddress=%E5%8C%97%E4%BA%AC%E5%B8%82-%E5%8C%97%E4%BA%AC%E5%B8%82-%E4%B8%9C%E5%9F%8E%E5%8C%BA&cname=%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&caddress=%E5%8C%97%E4%BA%AC%E5%B8%82-%E5%8C%97%E4%BA%AC%E5%B8%82-%E4%B8%9C%E5%9F%8E%E5%8C%BA-%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&sign=73CDAC12A78401940C9BE3C7AAB0F257");
+//        wvWeb.loadUrl("http://eft.colourlife.com/?platform=colourlife&userid=2899331&username=user_15072616127&mobile=15072616127&password=3a018596eeaad1cc0d18b05e6fbcbc65&cid=585&cname=%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&caddress=%E5%8C%97%E4%BA%AC%E5%B8%82-%E5%8C%97%E4%BA%AC%E5%B8%82-%E4%B8%9C%E5%9F%8E%E5%8C%BA&cname=%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&caddress=%E5%8C%97%E4%BA%AC%E5%B8%82-%E5%8C%97%E4%BA%AC%E5%B8%82-%E4%B8%9C%E5%9F%8E%E5%8C%BA-%E4%BD%93%E9%AA%8C%E5%B0%8F%E5%8C%BA&sign=73CDAC12A78401940C9BE3C7AAB0F257");
+        wvWeb.loadUrl(Constants.ASSET_FILE_PREFIXION+"efeitong.html");
     }
 
     @Override

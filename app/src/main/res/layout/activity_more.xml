@@ -49,7 +49,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_pass"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -71,9 +71,35 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_pass_new"/>
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/divider_line"
+                        android:layout_marginRight="@dimen/divider_line"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/base_margin">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/e_repairs"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -93,123 +119,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_complain"/>
 
                     </LinearLayout>
 
@@ -237,7 +147,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_notification"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -259,7 +169,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_renting"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -281,7 +191,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_message"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -303,7 +213,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_fitting"/>
 
                     </LinearLayout>
 
@@ -331,7 +241,103 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_power"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/base_margin"
+                        android:layout_marginRight="@dimen/divider_line"
+                        android:layout_marginBottom="@dimen/divider_line"
+                        android:gravity="center"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/e_parterner"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/base_margin"
+                        android:layout_marginRight="@dimen/divider_line"
+                        android:layout_marginBottom="@dimen/divider_line"
+                        android:gravity="center"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/e_family"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/base_margin"
+                        android:paddingBottom="@dimen/base_margin"
+                        android:layout_marginRight="@dimen/divider_line"
+                        android:layout_marginBottom="@dimen/divider_line"
+                        android:gravity="center"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/charity"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/base_margin"
+                        android:paddingBottom="@dimen/base_margin"
+                        android:layout_marginRight="@dimen/divider_line"
+                        android:layout_marginBottom="@dimen/divider_line"
+                        android:gravity="center"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/e_house"/>
 
                     </LinearLayout>
                     <FrameLayout
@@ -396,7 +402,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/treasure_life"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -418,125 +424,17 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/borrow"/>
 
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        android:padding="@dimen/base_margin"
-                        android:layout_marginRight="@dimen/divider_line"
-                        android:layout_marginBottom="@dimen/divider_line"
-                        android:gravity="center"
-                        android:background="@android:color/white">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/icon_home_zbsq3x"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@android:color/black"
-                            android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
-
-                    </LinearLayout>
+                    <FrameLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/divider_line"
+                    android:layout_marginBottom="@dimen/divider_line"
+                    android:background="@android:color/white"
+                    />
                     <FrameLayout
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
@@ -547,6 +445,86 @@
                         />
 
                 </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:padding="@dimen/base_margin"-->
+                        <!--android:layout_marginRight="@dimen/divider_line"-->
+                        <!--android:layout_marginBottom="@dimen/divider_line"-->
+                        <!--android:gravity="center"-->
+                        <!--android:background="@android:color/white">-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/icon_home_zbsq3x"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@android:color/black"-->
+                            <!--android:layout_marginTop="@dimen/base_margin"-->
+                            <!--android:text="e费通"/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:padding="@dimen/base_margin"-->
+                        <!--android:layout_marginRight="@dimen/divider_line"-->
+                        <!--android:layout_marginBottom="@dimen/divider_line"-->
+                        <!--android:gravity="center"-->
+                        <!--android:background="@android:color/white">-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/icon_home_zbsq3x"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@android:color/black"-->
+                            <!--android:layout_marginTop="@dimen/base_margin"-->
+                            <!--android:text="e费通"/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:padding="@dimen/base_margin"-->
+                        <!--android:layout_marginRight="@dimen/divider_line"-->
+                        <!--android:layout_marginBottom="@dimen/divider_line"-->
+                        <!--android:gravity="center"-->
+                        <!--android:background="@android:color/white">-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/icon_home_zbsq3x"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@android:color/black"-->
+                            <!--android:layout_marginTop="@dimen/base_margin"-->
+                            <!--android:text="e费通"/>-->
+
+                    <!--</LinearLayout>-->
+                    <!--<FrameLayout-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginRight="@dimen/divider_line"-->
+                        <!--android:layout_marginBottom="@dimen/divider_line"-->
+                        <!--android:background="@android:color/white"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
 
 
 
@@ -585,7 +563,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/phone_recharge"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -607,7 +585,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/on_sale"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -629,7 +607,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/choiceness"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -651,7 +629,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/hua"/>
 
                     </LinearLayout>
 
@@ -679,7 +657,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_greeen"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -701,7 +679,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_eat"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -723,7 +701,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/e_education"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -745,7 +723,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/hao_tour"/>
 
                     </LinearLayout>
 
@@ -773,7 +751,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/air_ticket"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -795,17 +773,31 @@
                             android:layout_height="wrap_content"
                             android:textColor="@android:color/black"
                             android:layout_marginTop="@dimen/base_margin"
-                            android:text="e费通"/>
+                            android:text="@string/qianxi_jewelry"/>
 
                     </LinearLayout>
-                    <FrameLayout
-                        android:layout_height="match_parent"
+                    <LinearLayout
                         android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/base_margin"
                         android:layout_marginRight="@dimen/divider_line"
                         android:layout_marginBottom="@dimen/divider_line"
-                        android:background="@android:color/white"
-                        />
+                        android:gravity="center"
+                        android:background="@android:color/white">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_home_zbsq3x"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/base_margin"
+                            android:text="@string/one_rmb"/>
+
+                    </LinearLayout>
                     <FrameLayout
                         android:layout_height="match_parent"
                         android:layout_width="0dp"

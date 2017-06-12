@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="好生活停车场运营平台 ">
+    <meta name="keyword" content="智能设备 智慧社区...">
+    <meta name="author" content="t.aparcar.cn">
+    <link rel="shortcut icon" href="http://t.aparcar.cn/favicon.ico" />
+
+    <title>好生活停车场运营平台</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" type="text/css" href="http://cache.aparcar.cn/cache/css/app/base.css">
+    <link rel="stylesheet" type="text/css" href="http://cache.aparcar.cn/cache/css/app/public.css">
+    <script type="text/javascript" src="http://cache.aparcar.cn/cache/scripts/app/zepto.min.js"></script>
+    <script type="text/javascript" src="http://cache.aparcar.cn/cache/scripts/app/util.js"></script>
+    <script type="text/javascript" src="/scripts/app/public.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://cache.aparcar.cn/cache/css/app/swiper.min.css">
+    <script type="text/javascript" src="http://cache.aparcar.cn/cache/scripts/app/swiper.min.js"></script>
+    <!-- analytics -->
+    <!--
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.aparcar.cn/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//analytics.aparcar.cn/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    -->
+    <!-- End analytics Code -->
+</head>
+
+
+<body>
+<div class="content wrapper" >
+<!--
+    <section class="weather">
+        <iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=UA95F5B04E&cid=CHBJ000000&l=zh-CHS&p=SMART&a=1&u=C&s=3&m=0&x=1&d=2&fc=FFFFFF&bgc=&bc=&ti=0&in=0&li=" frameborder="0" scrolling="no" width="500" height="100" allowTransparency="true"></iframe>
+    </section>
+-->
+    <section class="index-carinfo">
+        <div class="carinfo-input">
+            <span>粤B</span>
+            <input type="text" placeholder="车牌号后五位" value=""/>
+            <div class="carinfo-input-more">
+                <div class="btn-txt">历史<br/></div>
+                <div class="info-list"></div>
+            </div>
+        </div>
+        <div class="carinfo-links">
+            <!--<a href="/service/parking/apply?">申请月卡</a>-->
+            <a class='carinfo-month-pay'>月卡缴费</a> <!---->
+            <a class='carinfo-temp-pay'>临时缴费</a>
+        </div>
+    </section>
+
+    <section class="index-links mgr-links">
+        <a class='cfrs-links'>
+            <div class="div-ico ico-big ico-lowinsurance"></div>
+            <div>免停车费</div>
+        </a>
+        <!--
+        <a href="/service/parking/mgr_month?">
+            <div class="div-ico ico-big ico-gas"></div>
+            <div>加油充值</div>
+        </a>
+      -->
+
+        <a >
+            <div class="div-ico ico-big ico-getcard"></div>
+            <div>月卡申请</div>
+        </a>
+
+        <a >
+            <div class="div-ico ico-big ico-authorize"></div>
+            <div>预约进场</div>
+        </a>
+        <a class="open-gate">
+            <div class="div-ico ico-big ico-opengate"></div>
+            <div>紧急开闸</div>
+        </a>
+    </section>
+
+    <section class="index-carlist swiper-container">
+        <div class="swiper-wrapper">
+            <div class="car-list-li swiper-slide">
+                <img src="" />
+                <span>
+                    <div>联系管理处添加车辆</div>
+                    <div style="display:none">0</div>
+                    <div style="display:none">0</div>
+                    <div style="display:none">0</div>
+                    <div> </div>
+                    <div>彩生活停车场欢迎您</div>
+
+                </span>
+            </div>
+
+
+        </div>
+        <div class="index-carlist-prev div-ico ico-small ico-arrow-left current"></div>
+        <div class="index-carlist-next div-ico ico-small ico-arrow-right current"></div>
+    </section>
+
+    <section class="index-links " >
+        <a class=""><!---->
+            <div class="div-ico ico-big ico-paycard2"></div>
+            <div>月卡缴费</div>
+        </a>
+        <a class="">
+            <div class="div-ico ico-big ico-paytemp"></div>
+            <div>临停缴费</div>
+        </a>
+        <!--
+            车辆上锁状况
+            已经上锁：current
+            未上锁：没有current
+        -->
+        <a class="">
+            <div class="div-ico ico-big ico-lock img-lock"></div>
+            <div class='txt-lock'>上锁</div>
+            <div style="display:none">0</div>
+        </a>
+
+        <a class="">
+            <div class="div-ico ico-big ico-unlock"></div>
+            <div class='txt-lock'>解锁</div>
+            <div style="display:none">1</div>
+        </a>
+      <!--
+        <a href="#" class="open-gate">
+            <div class="div-ico ico-big ico-opengate"></div>
+            <div>紧急开闸</div>
+        </a>
+      -->
+    </section>
+    <section class="index-carinfo">
+        <div>
+      <a class="cfrs-links">>
+      <img src="http://cache.aparcar.cn/cache/ad/1.jpg"  scrolling="no" width="100%"   allowTransparency="true"></img>
+      </a>
+    </div>
+    <div class="height-bar"></div>
+        <div>
+      <a class="">>
+      <img src="http://cache.aparcar.cn/cache/ad/51ad.jpg"  scrolling="no" width="100%"   allowTransparency="true"></img>
+      </a>
+    </div>
+    <div class="height-bar"></div>
+      </section>
+    <section>
+        <div class="height-bar"></div>
+        <div class="height-bar"></div>
+        <div class="height-bar"></div>
+
+    </section>
+
+    <section class="bottom-menu">
+        <a class="current">
+            <div class="div-ico ico-big ico-carlife current"></div>
+            <div>行车生活</div>
+        </a>
+        <a >
+            <div class="div-ico ico-big ico-mycenter "></div>
+            <div>我的</div>
+        </a>
+    </section>
+    <section class="msgbox msg-opengate hide" id='msg-sendcode'>
+        <div class="msgbox-cnt">
+            <div class="msgbox-title">紧急开闸</div>
+            <div class="input-select msg-opengate-carpark">
+                            <span>您尚未开通紧急开闸权限0</span>
+                          </div>
+            <div class="height-bar"></div>
+            <div class="msg-opengate-btns" id="msg-sendcode-btns">
+                <span>取消</span>
+                <span>确定</span>
+            </div>
+        </div>
+    </section>
+    <section class="msgbox msg-opengate hide" id='msg-opengate'>
+        <div class="msgbox-cnt">
+            <div class="msgbox-title">紧急开闸</div>
+
+            <input type="text" class="msg-opengate-code" placeholder="请输入道闸显示器上4位密码" />
+            <div class="msg-opengate-btns" id='msg-opengate-btns'>
+                <span>取消</span>
+                <span>确定</span>
+            </div>
+        </div>
+    </section>
+
+<script>
+var SITE_URL="/";
+var currentSwiperCar = '';//
+var currentSwiperCarID = '';//
+var currentSwiperCarBID = '';//
+var currentSwiperCarLock = 0;//
+var mobile=15072616127;
+var station4open=0;
+var contract_num="0";
+var swiper = new Swiper('.index-carlist', {
+    nextButton: '.index-carlist-next',
+    prevButton: '.index-carlist-prev',
+    spaceBetween: 30,
+    onInit:function(swiper){
+        currentSwiperCar = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(0).text();
+        currentSwiperCarID = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(1).text();
+        currentSwiperCarBID = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(2).text();
+        currentSwiperCarLock = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(3).text();
+        if(currentSwiperCarBID){
+          /*
+          $('.lock-car').removeClass("disable");
+          $('.unlock-car').removeClass("disable");
+          $('.unlock-car').removeClass("current");
+          $('.pay-car-temp').removeClass("disable");
+          */
+          //$('.open-gate').removeClass("disable");
+
+        }else{
+          /*
+          $('.lock-car').addClass("disable");
+          $('.unlock-car').addClass("disable");
+          $('.unlock-car').addClass("current");
+            $('.pay-car-temp').addClass("disable");
+            */
+            //$('.open-gate').addClass("disable");
+        }
+        console.log('currentSwiperCarLock='+currentSwiperCarLock);
+
+        console.log(currentSwiperCar+' bid= '+currentSwiperCarBID);
+        /*
+        if(currentSwiperCarLock == '1'){
+           $('.lock-car').addClass("current");
+           $('.txt-lock').text("解锁");
+        }else{
+          $('.lock-car').removeClass("current");
+          $('.txt-lock').text("上锁");
+        }
+        */
+    },
+    onSlideChangeEnd:function(swiper){
+        currentSwiperCar = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(0).text();
+        currentSwiperCarID = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(1).text();
+        currentSwiperCarBID = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(2).text();
+        currentSwiperCarLock = $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(3).text();
+        console.log(currentSwiperCar+' bid= '+currentSwiperCarBID);
+        if(currentSwiperCarBID){
+          /*
+          $('.lock-car').removeClass("disable");
+          $('.unlock-car').removeClass("disable");
+          $('.unlock-car').removeClass("current");
+          $('.pay-car-temp').removeClass("disable");
+          */
+                    //$('.open-gate').removeClass("disable");
+        }else{
+          /*
+          $('.lock-car').addClass("disable");
+          $('.unlock-car').addClass("disable");
+          $('.unlock-car').addClass("current");
+          $('.pay-car-temp').addClass("disable");
+          */
+          //$('.open-gate').addClass("disable");
+        }
+        /*
+        if(currentSwiperCarLock == '1'){
+           $('.lock-car').addClass("current");
+           $('.txt-lock').text("解锁");
+        }else{
+          $('.lock-car').removeClass("current");
+          $('.txt-lock').text("上锁");
+        }
+        */
+    }
+});
+
+    function lockChange(type, callback){
+        /*demo start*/
+        //callback();
+        /*demo end*/
+        console.log('lockChange'+type);
+        tmploading.show();
+        var senddata = {
+            //用户标识信息
+            "cmd":type,
+            "plate":currentSwiperCar,
+            'id':currentSwiperCarID,
+        };
+        $.ajax({
+            url:SITE_URL + "service/parking/lock",
+            type: "post",
+            data: senddata,
+            dataType: "json",
+            success:function(){
+                tmploading.hide();
+                callback();
+            }
+        });
+    }
+    function ask4open(station,callback){
+
+        var senddata = {
+          "cmd":'ask',
+          'mobile':mobile,
+          "plate":currentSwiperCar,
+          'id':currentSwiperCarID,
+          'station':station,
+        };
+        $.ajax({
+            url:SITE_URL + "service/parking/ask4open",
+            type: "post",
+            data: senddata,
+            dataType: "json",
+            success:function(){
+                //tmploading.hide();
+                callback();
+            }
+        });
+    }
+    function openGate(code,station,callback){
+        /*demo start*/
+        //callback();
+        //return true;
+        /*demo end*/
+
+        tmploading.show();
+        var senddata = {
+          "cmd":'open',
+          'mobile':mobile,
+          "plate":currentSwiperCar,
+          'id':currentSwiperCarID,
+          'station':station,
+          'code':code,
+        };
+        $.ajax({
+            url:SITE_URL + "service/parking/open",
+            type: "post",
+            data: senddata,
+            dataType: "json",
+            success:function(data){
+                tmploading.hide();
+                callback(data);
+            }
+        });
+    }
+    function getHisCarList(mobile){
+        var $list = $('.carinfo-input-more .info-list');
+        $list.empty();
+
+        var senddata = {
+            'mobile':mobile,
+        };
+        $.ajax({
+            url:SITE_URL + "service/parking/history",
+            type: "post",
+            data: senddata,
+            dataType: "json",
+            success:function(data){
+                console.log(data);
+                var list= data.data;
+                for(var i = 0,l=list.length; i<l; i++){
+                    var flag= list[i].substring(0,1);
+                    var temp_palte = list[i].substring(1,3)+'•'+list[i].substring(3);
+                    $list.append('<div class="'+ flag+ '">'+temp_palte+'</div>');
+                }
+            }
+        });
+    }
+    function mobileJump(cmd)
+    {
+       if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+           var _cmd = "http://www.colourlife.com/*jumpPrototype*colourlife://proto?type=" + cmd;
+           document.location = _cmd;
+       } else if (/(Android)/i.test(navigator.userAgent)) {
+           var _cmd = "jsObject.jumpPrototype('colourlife://proto?type=" + cmd + "');";
+           eval(_cmd);
+       } else {
+
+       }
+    }
+    $(function(){
+
+      getHisCarList(mobile);
+      $('.carinfo-input-more .btn-txt').on('click', function(){
+          $('.carinfo-input-more .info-list').addClass('current').show();
+      });
+      $('.carinfo-input-more .info-list').on('click', function(evt){
+          var $self = $(evt.target);
+          if($self.hasClass('.info-list')){return true;}
+          var carinfo = $self.text().split('•');
+          $('.carinfo-input-more .info-list').removeClass('current').hide();
+          $('.carinfo-input span').text(carinfo[0]);
+          $('.carinfo-input input').val(carinfo[1]);
+      });
+
+      $('.unlock-car').on('click', function(){
+/*
+          if(!currentSwiperCarBID){
+            showMessage('易停车','该车不在场内，无法锁车/解锁');
+            return false;
+          }
+*/
+          var $self = $(this);
+          showAutoLock('您确认<span>解锁</span>吗？', function(){
+              lockChange('on', function(){
+              /*
+                  $self.removeClass('current');
+                  $self.find('div').eq(1).text('上锁');
+                  $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(3).text('0');
+                  */
+                  showMessage('易停车','车辆已经解锁');
+              });
+          });
+        });
+        $('.lock-car').on('click', function(){
+/*
+            if(!currentSwiperCarBID){
+              showMessage('易停车','该车不在场内，无法锁车/解锁');
+              return false;
+            }
+*/
+            var $self = $(this);
+                showAutoLock('您确认<span>上锁</span>吗？', function(){
+                    lockChange('off', function(){
+                      /*
+                        $self.addClass('current');
+                        $self.find('div').eq(1).text('解锁');
+                        $('.index-carlist .car-list-li').eq(swiper.activeIndex).find('div').eq(3).text('1');
+                        */
+                        showMessage('易停车','车辆已经上锁');
+                    });
+                });
+
+
+        });
+        $('.cfrs-links').on('click', function(){
+            mobileJump('ParkingFees');
+        });
+        // $('.open-gate').on('click', function(){
+        //     console.log('.open-gate is clicked');
+        //     if(parseInt(contract_num)==0){
+        //       showMessage('易停车','您尚未得到紧急开闸授权');
+        //       return false;
+        //     }
+
+
+            $('#msg-sendcode').show();
+        });
+
+/*
+        $('.carinfo-links a').on('click', function(){
+            var v1 = $('.carinfo-input span').text();
+            var v2 = $('.carinfo-input input').val();
+            if('车牌' == v1 || !v2.isCode()){
+                showMessage('注意', '请填写车牌码！');return false;
+            }
+            var link = $(this).attr('href');
+            link += '&plate='+v1+v2;
+            location.href = link;
+            return false;
+        });*/
+        /*
+        $('.carinfo-temp-pay').on('click', function(){
+            var v1 = $('.carinfo-input span').text();
+            var v2 = $('.carinfo-input input').val();
+            console.log(v1);
+            console.log(v2);
+            if('车牌' == v1 || !v2.isCode()){
+                showMessage('注意', '请填写车牌！');return false;
+            }
+            var link = $(this).attr('href');
+            link += '&plate='+v1+v2;
+            location.href = link;
+            return false;
+        });
+        */
+        $('.mgr-links a').on('click', function(){
+            var v1 = $('.carinfo-input span').text();
+            var v2 = $('.carinfo-input input').val();
+
+            var link = $(this).attr('href');
+            link += '&plate='+v1+v2;
+            // location.href = link;
+            return false;
+        });
+        /*
+        $('.pay-links a').on('click', function(){
+            if($(this).hasClass('disable')){
+              return false;
+            }
+            var link = $(this).attr('href');
+            link += '&plate='+currentSwiperCar+'&id='+currentSwiperCarID;
+            location.href = link;
+            return false;
+        });
+*/
+$('.pay-car-month').on('click', function(){
+  if($(this).hasClass('disable')){
+    return false;
+  }
+  var link = $(this).attr('href');
+  link += '&plate='+currentSwiperCar+'&id='+currentSwiperCarID;
+  // location.href = link;
+  return false;
+});
+$('.carinfo-month-pay').on('click', function(){
+  var v1 = $('.carinfo-input span').text();
+  var v2 = $('.carinfo-input input').val();
+  if('车牌' == v1 || !v2.isCode()){
+      showMessage('注意', '请填写车牌码！');return false;
+  }
+  var link = $(this).attr('href');
+  link += '&plate='+v1+v2;
+  // location.href = link;
+  return false;
+});
+$('.pay-car-temp').on('click', function(){
+    if($(this).hasClass('disable')){
+      return false;
+    }
+    var link = $(this).attr('href');
+    link += '&plate='+currentSwiperCar+'&id='+currentSwiperCarID;
+    // location.href = link;
+    return false;
+});
+
+        $('#msg-sendcode-btns span').eq(0).on('click', function(){
+          console.log('sendcode0');
+            $('#msg-sendcode').hide();
+            $('#msg-opengate').hide();
+        });
+        $('#msg-sendcode-btns span').eq(1).on('click', function(){
+
+          var station = $('.msg-opengate-carpark select').val();
+          station4open =station;
+          console.log('sendcode1 '+station);
+            $('#msg-sendcode').hide();
+            $('#msg-opengate').show();
+            ask4open(station,function(){});
+        });
+        $('#msg-opengate-btns span').eq(0).on('click', function(){
+          console.log('opengate0');
+            $('#msg-sendcode').hide();
+            $('#msg-opengate').hide();
+        });
+        $('#msg-opengate-btns span').eq(1).on('click', function(){
+            console.log('opengate1');
+            var code = $('.msg-opengate-code').val();
+            if('' == code){
+                showMessage('提示', '请输入紧急开闸口令！');return false;
+            }
+            openGate(code,station4open,function(data){
+                $('.msg-opengate-code').val('');
+                $('.msg-opengate').hide();
+                showMessage('提示', data.tips);
+
+            });
+
+        });
+
+
+        //临停缴费按钮点击事件
+        $('.carinfo-temp-pay').on('click', function(){
+            var v1 = $('.carinfo-input span').text();
+            var v2 = $('.carinfo-input input').val();
+            var plate = v1 + v2;
+            if('车牌' == v1 || !v2.isCode()){
+                showMessage('注意', '请填写车牌！'); return ;
+            }
+            //检测是否是信用车牌
+            $.ajax({
+                url : SITE_URL + "service/parking/is_credit",
+                type : "post",
+                data : "plate=" + plate,
+                dataType: "json",
+                success:function(data){
+                    console.log(data);
+                    if(data.status){
+                        if(data.tips == 'success'){ //信用支付
+                            // location.href = SITE_URL + 'service/parking/credit?plate=' + plate; return ;
+                        }else if(data.tips == 'fail'){  //正常缴费
+                            // location.href = SITE_URL + 'service/parking/pay_temp?plate=' + plate; return ;
+                        }
+                    }else{
+                        showMessage('注意', '网络错误'); return ;
+                    }
+                }
+            });
+            return ;
+        });
+
+
+
+    });
+
+</script>
+
+
+</div>
+</body>
+</html>
