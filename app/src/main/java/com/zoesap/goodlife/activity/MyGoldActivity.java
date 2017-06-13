@@ -5,13 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
-import com.zoesap.goodlife.base.BaseToolbarActivity;
 import com.zoesap.goodlife.R;
+import com.zoesap.goodlife.base.BaseToolbarActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MyGoldActivity extends BaseToolbarActivity {
 
@@ -35,7 +37,7 @@ public class MyGoldActivity extends BaseToolbarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 break;
@@ -52,5 +54,14 @@ public class MyGoldActivity extends BaseToolbarActivity {
     public static Intent createStartIntent(Activity activity) {
         Intent intent = new Intent(activity, MyGoldActivity.class);
         return intent;
+    }
+
+    @OnClick(R.id.ll_recharge)
+    public void onViewClicked(View view) {
+        switch (view.getId()){
+            case R.id.ll_recharge:
+                startActivity(GoldRechargeActivity.createStartIntent(this));
+                break;
+        }
     }
 }

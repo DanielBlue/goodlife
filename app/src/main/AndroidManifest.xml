@@ -59,9 +59,9 @@
         <activity android:name=".activity.SameCommunityActivity" />
         <activity android:name=".activity.NearCommunityActivity" />
         <activity android:name=".activity.PersonInfoActivity" />
-        <activity android:name=".test.TestActivity">
-
-        </activity>
+        <activity android:name=".test.TestActivity" />
+        <activity android:name=".activity.GoldRechargeActivity" />
+        <activity android:name=".activity.GoldGiveActivity"></activity>
     </application>
 
 </manifest>

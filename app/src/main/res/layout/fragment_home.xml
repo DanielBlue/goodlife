@@ -20,7 +20,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/content_top_size"
-                android:background="@drawable/home_bg">
+                android:background="@drawable/background">
 
                 <TextView
                     android:id="@+id/tv_community"

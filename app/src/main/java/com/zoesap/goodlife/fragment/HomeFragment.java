@@ -56,7 +56,7 @@ public class HomeFragment extends BaseFragment {
 
         for (int x = 0; x < 3; x++) {
             ImageView view = new ImageView(getActivity());
-            view.setImageResource(R.drawable.home_bg);
+            view.setImageResource(R.drawable.banner);
             list.add(view);
         }
     }

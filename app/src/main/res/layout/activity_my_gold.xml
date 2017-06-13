@@ -14,199 +14,224 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@android:color/holo_orange_dark">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/f3_money_bg"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"/>
+            android:src="@drawable/f3_money_bg" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:text="@string/my_gold_balance"
             android:layout_margin="@dimen/base_margin"
-            android:textSize="@dimen/text_size_medium"/>
+            android:text="@string/my_gold_balance"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium" />
+
         <TextView
             android:id="@+id/tv_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="@dimen/base_margin"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_margin"
             android:text="1.00"
-            android:textSize="40sp"/>
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:layout_toRightOf="@id/tv_balance"
             android:layout_alignBottom="@id/tv_balance"
+            android:layout_toRightOf="@id/tv_balance"
             android:paddingBottom="@dimen/margin_small"
             android:text="@string/rmb_yuan"
-            android:textSize="@dimen/text_size_medium"/>
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="@dimen/base_margin"
             android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/base_margin"
             android:orientation="horizontal">
+
             <TextView
-                android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
                 android:layout_marginRight="@dimen/margin_small"
                 android:paddingBottom="@dimen/margin_small"
-                android:text="@string/income"/>
+                android:text="@string/income"
+                android:textColor="@android:color/white" />
+
             <TextView
-                android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="0.00"
+                android:layout_alignParentBottom="true"
                 android:layout_marginRight="@dimen/margin_small"
-                android:textSize="@dimen/text_size_medium"/>
+                android:text="0.00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
+
             <TextView
-                android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
                 android:layout_marginRight="@dimen/margin_small"
                 android:paddingBottom="@dimen/margin_small"
-                android:text="| 支出"/>
+                android:text="| 支出"
+                android:textColor="@android:color/white" />
+
             <TextView
-                android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
                 android:text="0.00"
-                android:textSize="@dimen/text_size_medium"/>
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
     </RelativeLayout>
 
     <LinearLayout
+        style="@style/LargeMarginLeftAndRight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/LargeMarginLeftAndRight"
         android:layout_marginTop="@dimen/base_margin">
+
         <LinearLayout
+            android:id="@+id/ll_recharge"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="@dimen/base_margin"
-            android:layout_marginRight="@dimen/divider_line"
             android:layout_marginBottom="@dimen/divider_line"
+            android:layout_marginRight="@dimen/divider_line"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/base_margin">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/e4_recharge"/>
+                android:src="@drawable/e4_recharge" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/base_margin"
                 android:text="@string/recharge"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="@dimen/base_margin"
-            android:layout_marginRight="@dimen/divider_line"
             android:layout_marginBottom="@dimen/divider_line"
+            android:layout_marginRight="@dimen/divider_line"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/base_margin">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/e4_give"/>
+                android:src="@drawable/e4_give" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
                 android:text="@string/give"
-                android:layout_marginTop="@dimen/base_margin"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="@dimen/base_margin"
-            android:layout_marginRight="@dimen/divider_line"
             android:layout_marginBottom="@dimen/divider_line"
+            android:layout_marginRight="@dimen/divider_line"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/base_margin">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/e4_income"/>
+                android:src="@drawable/e4_income" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/income_list"
                 android:layout_marginTop="@dimen/base_margin"
-                android:textColor="@android:color/black"/>
+                android:text="@string/income_list"
+                android:textColor="@android:color/black" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
+        style="@style/LargeMarginLeftAndRight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/LargeMarginLeftAndRight">
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="@dimen/base_margin"
-            android:layout_marginRight="@dimen/divider_line"
             android:layout_marginBottom="@dimen/divider_line"
+            android:layout_marginRight="@dimen/divider_line"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/base_margin">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/e4_expenditures"/>
+                android:src="@drawable/e4_expenditures" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
                 android:text="@string/give_list"
-                android:layout_marginTop="@dimen/base_margin"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/black" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="@dimen/base_margin"
-            android:layout_marginRight="@dimen/divider_line"
             android:layout_marginBottom="@dimen/divider_line"
+            android:layout_marginRight="@dimen/divider_line"
+            android:layout_weight="1"
             android:background="@android:color/white"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/base_margin">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/e4_record"/>
+                android:src="@drawable/e4_record" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/recharge_list"
                 android:layout_marginTop="@dimen/base_margin"
-                android:textColor="@android:color/black"/>
+                android:text="@string/recharge_list"
+                android:textColor="@android:color/black" />
         </LinearLayout>
+
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
-        </FrameLayout>
+            android:layout_weight="1"></FrameLayout>
     </LinearLayout>
 
 </LinearLayout>
