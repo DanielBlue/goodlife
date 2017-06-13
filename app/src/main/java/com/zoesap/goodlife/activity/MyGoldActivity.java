@@ -56,11 +56,23 @@ public class MyGoldActivity extends BaseToolbarActivity {
         return intent;
     }
 
-    @OnClick(R.id.ll_recharge)
+    @OnClick({R.id.ll_recharge, R.id.ll_give, R.id.ll_income_list, R.id.ll_give_list, R.id.ll_recharge_list})
     public void onViewClicked(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.ll_recharge:
                 startActivity(GoldRechargeActivity.createStartIntent(this));
+                break;
+            case R.id.ll_give:
+                startActivity(GoldGiveActivity.createStartIntent(this));
+                break;
+            case R.id.ll_income_list:
+                startActivity(GoldIncomeHistoryActivity.createStartIntent(this));
+                break;
+            case R.id.ll_give_list:
+                startActivity(GoldGiveHistoryActivity.createStartIntent(this));
+                break;
+            case R.id.ll_recharge_list:
+                startActivity(GoldRechargeHistoryActivity.createStartIntent(this));
                 break;
         }
     }

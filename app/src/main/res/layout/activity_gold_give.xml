@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBaseBackground"
+    android:orientation="vertical"
     tools:context="com.zoesap.goodlife.activity.GoldGiveActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <include layout="@layout/include_top_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_margin"
+        android:layout_marginTop="@dimen/base_margin"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:hint="@string/input_give_phone_num"
+            android:padding="@dimen/base_margin" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/e4_contacts"
+            android:layout_marginRight="@dimen/base_margin"
+            />
+    </RelativeLayout>
+    <TextView
+        style="@style/ButtonTextStyle"
+        android:text="@string/next_step"/>
+</LinearLayout>

@@ -143,17 +143,17 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/white"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
         <TextView
             android:id="@+id/tv_ok"
+            style="@style/ButtonTextStyle"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:text="@string/ok"
-            android:textSize="@dimen/text_size_medium"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:background="@color/colorPrimary"/>
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"/>
         <TextView
             android:id="@+id/tv_top_limit"
             android:layout_width="wrap_content"

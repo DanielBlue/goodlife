@@ -127,6 +127,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_give"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/divider_line"
@@ -151,6 +152,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_income_list"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/divider_line"
@@ -181,6 +183,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/ll_give_list"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/divider_line"
@@ -205,6 +208,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/ll_recharge_list"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/divider_line"

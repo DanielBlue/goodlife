@@ -3,8 +3,8 @@ package com.zoesap.goodlife.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.zoesap.goodlife.R;
@@ -12,8 +12,9 @@ import com.zoesap.goodlife.base.BaseToolbarActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class GoldGiveActivity extends BaseToolbarActivity {
+public class GoldRechargeHistoryActivity extends BaseToolbarActivity {
 
     @BindView(R.id.tv_title)
     TextView tvTitle;
@@ -22,10 +23,10 @@ public class GoldGiveActivity extends BaseToolbarActivity {
 
     @Override
     protected void initView() {
-        setContentView(R.layout.activity_gold_give);
+        setContentView(R.layout.activity_gold_recharge_history);
         ButterKnife.bind(this);
         initToolbar(tbToolbar);
-        tvTitle.setText(R.string.give);
+        tvTitle.setText(R.string.recharge_history);
     }
 
     @Override
@@ -33,10 +34,13 @@ public class GoldGiveActivity extends BaseToolbarActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_give,menu);
-        return super.onCreateOptionsMenu(menu);
+    @OnClick(R.id.tv_go_recharge)
+    public void onViewClicked(View view) {
+        switch (view.getId()){
+            case R.id.tv_go_recharge:
+                startActivity(GoldRechargeActivity.createStartIntent(this));
+                break;
+        }
     }
 
     @Override
@@ -50,7 +54,7 @@ public class GoldGiveActivity extends BaseToolbarActivity {
     }
 
     public static Intent createStartIntent(Activity activity) {
-        Intent intent = new Intent(activity, GoldGiveActivity.class);
+        Intent intent = new Intent(activity, GoldRechargeHistoryActivity.class);
         return intent;
     }
 }

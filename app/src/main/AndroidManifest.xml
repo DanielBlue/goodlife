@@ -61,7 +61,10 @@
         <activity android:name=".activity.PersonInfoActivity" />
         <activity android:name=".test.TestActivity" />
         <activity android:name=".activity.GoldRechargeActivity" />
-        <activity android:name=".activity.GoldGiveActivity"></activity>
+        <activity android:name=".activity.GoldGiveActivity" />
+        <activity android:name=".activity.GoldIncomeHistoryActivity" />
+        <activity android:name=".activity.GoldGiveHistoryActivity" />
+        <activity android:name=".activity.GoldRechargeHistoryActivity"></activity>
     </application>
 
 </manifest>

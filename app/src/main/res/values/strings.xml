@@ -120,4 +120,9 @@
     <string name="choose_recharge_limit">请选择需要充值的金额</string>
     <string name="choose_recharge_limit_by_yourself">或者手动输入充值金额</string>
     <string name="illegal_argument">输入的金额不合法</string>
+    <string name="input_give_phone_num">请输入获赠人的账号(手机号)</string>
+    <string name="next_step">下一步</string>
+    <string name="history_record">历史记录</string>
+    <string name="no_income_history">你还没有收入~</string>
+    <string name="go_recharge">去充值</string>
 </resources>
