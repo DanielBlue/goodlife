@@ -58,4 +58,5 @@ public class GoldMallActivity extends BaseToolbarWebActivity {
         Intent intent = new Intent(activity, GoldMallActivity.class);
         return intent;
     }
+
 }
